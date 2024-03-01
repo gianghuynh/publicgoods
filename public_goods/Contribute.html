@@ -1,0 +1,17 @@
+{{ extends "global/Page.html" }}
+{{ block title }}Public Game{{ endblock }}
+{{ block content }}
+    <h3>Contribute</h3>
+    <p>
+        This game is a version of the public goods game involving
+        {{ C.PLAYERS_PER_GROUP }} players,
+        Each players starts with an initial capital of {{ C.ENDOWMENT }},
+        and the game operates with an efficiency factor of {{ C.EFFICIENCY }}.
+    </p>
+
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}
