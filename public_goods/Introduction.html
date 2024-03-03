@@ -1,0 +1,19 @@
+{{ extends "global/Page.html" }}
+{{ block title }}Public Goods Game{{ endblock }}
+{{ block content }}
+    <h3>Introduction</h3>
+    <p>In this game with {{ C.PLAYERS_PER_GROUP}} players,
+        each player starts with an endowment of {{C.ENDOWMENT}}.
+        You must decide whether to keep the money for yourself or contribute it to a common pool.
+        The efficiency factor of {{C.EFFICIENCY}} means that for every point contributed to the common pool,
+        it generates {{C.EFFICIENCY}} units of benefit to all players.
+        The challenge is to balance individual gains with maximizing
+        the overall benefit for everyone.
+    </p>
+
+
+    {{ formfields }}
+
+    {{ next_button }}
+
+{{ endblock }}
