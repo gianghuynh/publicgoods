@@ -3,7 +3,7 @@ from otree.api import *
 
 class C(BaseConstants):
     NAME_IN_URL = 'public_goods'
-    PLAYERS_PER_GROUP = 2
+    PLAYERS_PER_GROUP = 10
     NUM_ROUNDS = 1
     ENDOWMENT = cu(100)
     EFFICIENCY = 1.5
